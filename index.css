@@ -1,0 +1,487 @@
+/**************************************************************
+
+Reset CSS
+
+***************************************************************/
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+  -webkit-tap-highlight-color: transparent;
+  color: #333333;
+  font-family: "Orbitron", "游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  min-height: 100vh;
+  /* min-height: -webkit-fill-available; */
+  overflow-wrap: break-word;
+  position: relative;
+  z-index: -9999;
+}
+
+body.hidden {
+  overflow: hidden;
+}
+
+/* pcの電話番号発信対応 */
+@media screen and (min-width: 768px) {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
+
+/* ホバー */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+/* img:not([alt]) {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+} */
+
+label {
+  display: block;
+}
+
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  background-image: none;
+  border: none;
+  /* border: 1px solid #333; */
+  border-radius: 0;
+  font-family: inherit;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"],
+input[type="button"],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+/* input[]とした場合には詳細度が高まってしまい、ここのreset.cssを上書きできなくなる。 */
+/************************************************************************
+  テキスト
+************************************************************************/
+input[type="text"] {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 6px;
+  padding-left: 6px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: inherit;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 0;
+  appearance: none;
+}
+
+/************************************************************************
+  メールアドレス
+************************************************************************/
+input[type="email"] {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 6px;
+  padding-left: 6px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: inherit;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 0;
+  appearance: none;
+}
+
+/************************************************************************
+  電話番号
+************************************************************************/
+input[type="tel"] {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 6px;
+  padding-left: 6px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: inherit;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 0;
+  appearance: none;
+}
+
+/************************************************************************
+  パスワード
+************************************************************************/
+input[type="password"] {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 6px;
+  padding-left: 6px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: inherit;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 0;
+  appearance: none;
+}
+
+/************************************************************************
+  テキストエリア
+************************************************************************/
+textarea {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 6px;
+  padding-left: 6px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: inherit;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 0;
+  appearance: none;
+}
+
+/************************************************************************
+  チェックボックス
+************************************************************************/
+input[type="checkbox"] {
+  position: absolute;
+  white-space: nowrap;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+}
+
+input[type="checkbox"] + span {
+  padding-left: 25px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="checkbox"] + span::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+input[type="checkbox"] + span::after {
+  margin-top: -2px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.32);
+  border-left: 2px solid rgba(0, 0, 0, 0.32);
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%) rotate(-45deg);
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+input[type="checkbox"]:checked + span::after {
+  opacity: 1;
+}
+
+/************************************************************************
+  ラジオボタン
+************************************************************************/
+input[type="radio"] {
+  position: absolute;
+  white-space: nowrap;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+}
+
+input[type="radio"] + span {
+  padding-left: 25px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="radio"] + span::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+input[type="radio"] + span::after {
+  content: "";
+  display: block;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 4px;
+  padding-left: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(0, 0, 0, 0.32);
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+input[type="radio"]:checked + span::after {
+  opacity: 1;
+}
+
+/************************************************************************
+  セレクトボックス(ドロップダウンメニュー)
+************************************************************************/
+select {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  padding-left: 8px;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 0;
+  appearance: none;
+}
+
+/**************************************************************
+
+***************************************************************/
+
+* {
+  letter-spacing: -0.05em;
+  color: white;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #161616;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.scroll-container {
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  will-change: transform;
+}
+
+.images-grid {
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5rem;
+  padding-top: 120%;
+  border-radius: 10px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  /* スクロールアニメーションと連動させるために縦に大きくとる */
+  height: 140%;
+  object-fit: cover;
+  position: absolute;
+  top: -20%;
+  will-change: transform;
+}
+
+.overlay {
+  position: absolute;
+  /* 
+    inset...top, right, bottom, left に対応する一括指定
+    inset: 0; ... すべての辺に適用される値を0する
+  */
+  inset: 0;
+  /* top: 0; left: 0; right: 0; bottom: 0; */
+  z-index: 1;
+  background-color: rgba(255, 64, 0, 1);
+  mix-blend-mode: screen;
+}
+
+.pixel {
+  position: absolute;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  transition: 1s;
+  /* border: 1px solid #000000; */
+}
+
+.pixel:hover {
+  background-color: white;
+  transition: 0s;
+}
+
+
